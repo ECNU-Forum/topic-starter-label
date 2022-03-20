@@ -34,7 +34,7 @@ app.initializers.add('dem13n-topic-starter-label', () => {
         return;
       }
 
-      if (postAuthor === discussionAuthor && checkFP(post)) {
+      if (postAuthor === discussionAuthor) {
         vnode.children.push(
           <span className="topicStarter">{labelText}</span>
         );
